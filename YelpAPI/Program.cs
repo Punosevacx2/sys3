@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
-using System.Reactive.Subjects;
 using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using Microsoft.ML;
-using YelpAPI;
 using Yelp.Api;
 using Yelp.Api.Models;
+using Microsoft.ML;
 using Microsoft.ML.Data;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Reactive.Subjects;
+
+
 
 public class SentimentAnalysisService
 {
@@ -224,7 +228,6 @@ namespace YelpAPI
         }
     }
 
-
     public class Business
     {
         public string Name { get; set; }
@@ -346,6 +349,8 @@ namespace YelpAPI
             subscription3?.Dispose();
         }
     }
+
+
 
     internal class Program
     {
